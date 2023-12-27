@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <title>FitIndex</title>
+  </head>
+  <body>
+    <div class="top-section">
+      <h1 class="title">FitIndex</h1>
+      <h4 class="sub-title">BMI Calculator</h4>
+    </div>
+
+    <div class="gender">
+      <div class="card">
+        <img src="/images/female.svg" alt="female" />
+        <p>FEMALE</p>
+      </div>
+      <div class="card">
+        <img src="images/male.svg" alt="male" />
+        <p>MALE</p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <h2>HEIGHT <span>CM</span></h2>
+      <div class="range">
+        <input type="range" min="0" max="100" value="0" id="range" />
+        <div class="value">0</div>
+      </div>
+    </div>
+    <div class="weight-age">
+      <div class="card">
+        <p>WEIGHT</p>
+        <p>20</p>
+        <div class="card-buttons">
+          <button><b>-</b></button>
+          <button><b>+</b></button>
+        </div>
+      </div>
+
+      <div></div>
+      <div class="card">
+        <p>AGE</p>
+        <p>20</p>
+        <div class="card-buttons">
+          <button><b>-</b></button>
+          <button><b>+</b></button>
+        </div>
+      </div>
+    </div>
+    <div class="calculate">
+      <h2 class="calcu"><a href="bmi.html">CALCULATE BMI</a></h2>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
