@@ -14,46 +14,50 @@
     </div>
 
     <div class="gender">
-      <div class="card">
+      <div class="card" id="femaleCard">
         <img src="/images/female.svg" alt="female" />
         <p>FEMALE</p>
       </div>
-      <div class="card">
+      <div class="card" id="maleCard">
         <img src="images/male.svg" alt="male" />
         <p>MALE</p>
       </div>
     </div>
+
     <div class="wrapper">
-      <h2>HEIGHT <span>CM</span></h2>
+      <h2>HEIGHT <span id="heightValue">0</span> <span>CM</span></h2>
       <div class="range">
-        <input type="range" min="0" max="100" value="0" id="range" />
+        <input type="range" min="0" max="300" value="0" id="range" />
+
         <div class="value">0</div>
       </div>
     </div>
+
     <div class="weight-age">
-      <div class="card">
+      <div class="card" id="weightCard">
         <p>WEIGHT</p>
-        <p>20</p>
+        <p id="weight">0</p>
         <div class="card-buttons">
-          <button><b>-</b></button>
-          <button><b>+</b></button>
+          <button class="subtractWeightButton"><b>-</b></button>
+          <button class="addWeightButton"><b>+</b></button>
         </div>
       </div>
 
-      <div></div>
-      <div class="card">
+      <div class="card" id="ageCard">
         <p>AGE</p>
-        <p>20</p>
+        <p id="age">0</p>
         <div class="card-buttons">
-          <button><b>-</b></button>
-          <button><b>+</b></button>
+          <button class="subtractButton"><b>-</b></button>
+          <button class="addButton"><b>+</b></button>
         </div>
       </div>
     </div>
-    <div class="calculate">
-      <h2 class="calcu"><a href="bmi.html">CALCULATE BMI</a></h2>
-    </div>
 
+    <div class="calculate">
+      <h2 class="calcu">
+        <a href="#" onclick="bmiCalculator()">CALCULATE BMI</a>
+      </h2>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
